@@ -10,10 +10,19 @@ The polarity of the 2 wire ethernet doesn't really matter (the slave will correc
 After this successful test I've proceeded testing with my PandarQT 3D lidar (which only has 100base-T1 interface) successfully.
 
 No MDIO setup is needed (the configuration is all done via strapping resistors). Just bridge the solder bridges to select autonomous mode and also master or slave as needed.
-If you need MDIO interface to check / set registers, keep in mind that while in autonomous mode the MDIO interface of TJA1101B will not work. Just set it to managed.
+While not required, if you need MDIO interface to check / set registers, keep in mind that while in autonomous mode the MDIO interface of TJA1101B will not work. Just set it to managed.
 
-I include the very rough Arduino sketch that I've used to interface with MDIO (bit banging)
+I include the very rough Arduino sketch that I've used to interface with MDIO (bit banging).
 
 ![alt text](picture.jpg)
 
 ![alt text](render.png)
+
+Resources used for this progect:
+
+- https://www.nxp.com/downloads/en/schematics/RDDRONE-T1ADAPT-SCH.pdf
+- https://github.com/NXPHoverGames/RDDRONE-T1ADAPT/blob/main/t1eth10Lpc/src/t1eth10Lpc.c
+- https://github.com/ehntoo/100base-t1-converter
+- https://www.nxp.com/document/guide/getting-started-with-the-rddrone-t1adapt-evaluation-board:GS-RDDRONE-T1ADAPT
+- https://github.com/cioban/arduino-projects/blob/master/smi/smi.ino
+
