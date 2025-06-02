@@ -12,13 +12,13 @@ After this successful test I've proceeded testing with my PandarQT 3D lidar (whi
 No MDIO setup is needed (the configuration is all done via strapping resistors). Just bridge the solder bridges to select autonomous mode and also master or slave as needed.
 While not required, if you need MDIO interface to check / set registers, keep in mind that while in autonomous mode the MDIO interface of TJA1101B will not work. Just set it to managed.
 
-I include the very rough Arduino sketch that I've used to interface with MDIO (bit banging).
+Is included the very rough Arduino sketch that I've used to interface with MDIO (bit banging).
 
 ![alt text](images/picture.jpg)
 
 ![alt text](images/render.png)
 
-Resources used for this progect:
+Resources used for this project:
 
 - https://www.nxp.com/downloads/en/schematics/RDDRONE-T1ADAPT-SCH.pdf
 - https://github.com/NXPHoverGames/RDDRONE-T1ADAPT/blob/main/t1eth10Lpc/src/t1eth10Lpc.c
