@@ -14,9 +14,9 @@ While not required, if you need MDIO interface to check / set registers, keep in
 
 I include the very rough Arduino sketch that I've used to interface with MDIO (bit banging).
 
-![alt text](picture.jpg)
+![alt text](images/picture.jpg)
 
-![alt text](render.png)
+![alt text](images/render.png)
 
 Resources used for this progect:
 
